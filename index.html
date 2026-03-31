@@ -8,10 +8,10 @@
         body {
             padding: 0;
             margin: 0;
-            line-height: 2.0;
-            font-family: "Hiragino Maru Gothic Pro", "Hiragino Kaku Gothic ProN", "Rounded Mplus 1c", sans-serif;
-            background-color: #f0f7ec;
-            color: #3d5c46;
+            line-height: 2.2;
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            background-color: #e5e1cc;
+            color: #333;
             text-align: center;
         }
         .header-image {
@@ -19,146 +19,34 @@
             max-width: 1000px;
             height: auto;
             display: block;
-            margin: 0 auto;
+            margin: 0 auto 40px;
         }
-
-        /* ===== 自己紹介カード ===== */
-        .intro-section {
-            max-width: 680px;
-            margin: 48px auto;
-            padding: 0 24px;
+        h1 {
+            font-size: 32px;
+            color: #6b8e23;
+            margin: 20px 0;
+            padding: 0 20px;
         }
-        .intro-section h2 {
-            font-size: 26px;
-            color: #4a8c5a;
-            margin: 0 0 24px;
-        }
-        .intro-card {
-            background: white;
-            border-radius: 32px;
-            border: 3px solid #c8e6a0;
-            padding: 32px 28px;
-            box-shadow: 0 8px 32px rgba(109,170,122,0.15);
-            text-align: left;
-        }
-        .intro-row {
-            display: flex;
-            align-items: flex-start;
-            gap: 12px;
-            padding: 10px 0;
-            border-bottom: 1.5px dashed #d4edc4;
-            font-size: 17px;
-        }
-        .intro-row:last-child { border-bottom: none; }
-        .intro-label {
-            min-width: 90px;
-            font-weight: 800;
-            color: #6daa7a;
-            font-size: 15px;
-        }
-        .intro-value { color: #3d5c46; }
-
-        /* ===== なかまたち ===== */
-        .friends-section {
-            max-width: 800px;
-            margin: 0 auto 56px;
-            padding: 0 24px;
-        }
-        .friends-section h2 {
-            font-size: 26px;
-            color: #4a8c5a;
-            margin: 0 0 24px;
-        }
-        .friends-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-        .friend-card {
-            background: white;
-            border-radius: 24px;
-            border: 2.5px solid #c8e6a0;
-            padding: 24px 16px;
-            box-shadow: 0 4px 16px rgba(109,170,122,0.12);
-            transition: transform 0.2s;
-        }
-        .friend-card:hover { transform: translateY(-4px); }
-        .friend-emoji { font-size: 52px; margin-bottom: 8px; }
-        .friend-name {
-            font-size: 17px;
-            font-weight: 800;
-            color: #4a8c5a;
-            margin: 0 0 4px;
-        }
-        .friend-desc {
-            font-size: 13px;
-            color: #8aab94;
-            line-height: 1.6;
-            margin: 0;
+        p {
+            font-size: 18px;
+            padding: 0 20px;
         }
     </style>
 </head>
 <body>
 
-    <img src="apple-hero.png" alt="アップルちゃん" class="header-image" />
+    <img
+        src="apple-hero.png"
+        alt="アップルちゃんの森のイラスト"
+        class="header-image"
+    />
 
-    <!-- 自己紹介カード -->
-    <section class="intro-section">
-        <h2>🍏 アップルちゃんってだれ？</h2>
-        <div class="intro-card">
-            <div class="intro-row">
-                <span class="intro-label">🏷️ なまえ</span>
-                <span class="intro-value">アップルちゃん</span>
-            </div>
-            <div class="intro-row">
-                <span class="intro-label">🏡 すみか</span>
-                <span class="intro-value">りんごの森のかわいいおうち</span>
-            </div>
-            <div class="intro-row">
-                <span class="intro-label">💚 すきなもの</span>
-                <span class="intro-value">みどりのりんご、森のさんぽ、絵本を読むこと</span>
-            </div>
-            <div class="intro-row">
-                <span class="intro-label">🌟 とくいなこと</span>
-                <span class="intro-value">りんごのケーキをやくこと、なかまをあつめること</span>
-            </div>
-            <div class="intro-row">
-                <span class="intro-label">💬 ひとこと</span>
-                <span class="intro-value">「いっしょに　ゆめのもりで　あそぼうね！」</span>
-            </div>
-        </div>
-    </section>
+    <h1>アップルちゃんの展示室</h1>
+    <p>ようこそ、<br>アップルちゃんと仲間たちが<br>くらす森へ</p>
 
-    <!-- なかまたち -->
-    <section class="friends-section">
-        <h2>🌳 もりのなかまたち</h2>
-        <div class="friends-grid">
-            <div class="friend-card">
-                <div class="friend-emoji">🍏</div>
-                <p class="friend-name">アップルちゃん</p>
-                <p class="friend-desc">みんなのリーダー。<br>いつも元気いっぱい！</p>
-            </div>
-            <div class="friend-card">
-                <div class="friend-emoji">🐰</div>
-                <p class="friend-name">うさぎのミミ</p>
-                <p class="friend-desc">ふわふわで優しい。<br>おはなしが大好き。</p>
-            </div>
-            <div class="friend-card">
-                <div class="friend-emoji">🐿️</div>
-                <p class="friend-name">りすのコロン</p>
-                <p class="friend-desc">木の実あつめが得意。<br>元気いっぱい走り回る。</p>
-            </div>
-            <div class="friend-card">
-                <div class="friend-emoji">🐦</div>
-                <p class="friend-name">ことりのピピ</p>
-                <p class="friend-desc">森のたよりを届ける。<br>歌声がきれい。</p>
-            </div>
-        </div>
-    </section>
-
-    <footer style="text-align:center; padding:40px 24px; background:rgba(255,255,255,0.6); border-top:2px solid #c8e6a0; margin-top:20px;">
+    <footer style="text-align:center; padding:40px 24px; background:rgba(255,255,255,0.5); border-top:2px solid #e4f0e4; margin-top:60px;">
         <p style="color:#8aab94; font-size:13px; margin:0 0 8px;">絵本のもりには、他にもたくさんの物語があるよ ✨</p>
-        <a href="https://www.ehonnomori-studio.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:0 auto 24px; padding:10px 24px; background:linear-gradient(135deg,#a8d5a2,#6daa7a); color:white; border-radius:100px; font-size:14px; font-weight:700; text-decoration:none; box-shadow:0 4px 12px rgba(109,170,122,0.35);">
+        <a href="https://www.ehonnomori-studio.com" target="_blank" rel="noopener noreferrer" style="display:inline-block; margin:0 auto 24px; padding:8px 20px; background:linear-gradient(135deg,#a8d5a2,#6daa7a); color:white; border-radius:20px; font-size:13px; font-weight:700; text-decoration:none; box-shadow:0 2px 8px rgba(109,170,122,0.3);">
             🌳 絵本のもりへ
         </a>
         <img src="og-logo.png" alt="絵本のもり" style="height:52px; width:auto; margin:0 auto 10px; display:block; opacity:0.45;" />
